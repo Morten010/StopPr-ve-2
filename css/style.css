@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 5.6rem;
+    font-weight: bold;
+}
+h2{
+    text-transform: capitalize;
+    font-size: 4.8rem;
+}
+h3{
+    font-size: 2.4rem;
+    text-transform: capitalize;
+}
+p{
+    font-size: 1.6rem;
+}
+nav{
+    width: 100vw;
+    max-width: 108.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    color: white;
+    transform: translate(-50%, 2rem);
+    left: 50%;
+}
+nav span{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    gap: 2.4rem;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #dddddd;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    color: #ffffff;
+}
+nav div{
+    display: flex;
+    gap: 2rem;
+}
+.btn{
+    padding: 1.3rem 4.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: black;
+    border: none;
+    color: white;
+}
+.btn-secondary{
+    border: none;
+}
+main{
+    height: 100vh;
+    text-align: center;
+    background-image: url(../Images/lycs-architecture-U2BI3GMnSSE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+main .color{
+    background-color: #00000041;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+#our-mission{
+    max-width: 108.1rem;
+    margin: 7.2rem auto;
+    display: flex;
+    gap: 11.1rem;
+}
+#our-mission aside, #our-mission article{
+    width: 50%;
+}
+#our-mission article{
+    display: grid;
+    place-content: center;
+}
+#our-mission article h2{
+    margin-bottom: 2.4rem;
+}
+#our-mission aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2.4rem;
+}
+#our-mission aside img{
+ grid-column: span 1;    
+}
+#our-mission aside img:last-child{
+    grid-column: span 2;
+}
+#meet-us{
+    background-color: #EBEBEB;
+}
+#meet-us .container{
+    max-width: 108.1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+#meet-us .profile-container{
+    display: flex;
+    justify-content: space-between;
+}
+#meet-us .profile-container .profile-pic{
+    border-radius: 10000px;
+    margin-bottom: 2rem;
+}
+#meet-us .profile-container p, h3{
+    margin-bottom: 2rem;
+}
+#meet-us .profile-container .icons{
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+}
+#meet-us .meet-text{
+    text-align: center;
+    display: inline-block;
+    margin: 7.2rem auto 10.6rem auto;
+}
+#meet-us .btn{
+    display: inline-block;
+    padding: 1.3rem 3.1rem;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    margin: 7rem 0 7rem;
+}
+#meet-pics {
+    max-width: 108.1rem;
+    margin: 7.2rem auto 11.9rem;
+    text-align: center;
+}
+#meet-pics h2{
+    margin-bottom: 2.4rem;
+}
+#meet-pics p{
+    margin-bottom: 8.5rem;
+}
+#meet-pics .photo-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.4rem;
+}
+#meet-pics .photo-grid img{
+    width: 100%;
+}
+#meet-pics .photo-grid .box-1{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+#meet-pics .photo-grid .box-3{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+#meet-pics .photo-grid .box-7{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.center-text{
+    text-align: center;
+}
+#for-hire{
+    background-color: #EBEBEB;
+    padding: 7.2rem 0;
+}
+#for-hire .container{
+    max-width: 108.1rem;
+    margin:  0 auto;
+}
+.center-text h2{
+    margin-bottom: 2.4rem;
+}
+.center-text p{
+    margin-bottom: 8.2rem;
+}
+.accordion header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #CFCFCF;
+    margin-bottom: 2rem;
+}
+.accordion:last-child header{
+    border: none;
+}
+.accordion:last-child .accordion-text{
+    border: none;
+}
+.accordion header h3{
+    margin-bottom: .3rem;
+}
+.accordion header p{
+    margin-bottom: 2.4rem;
+}
+.accordion .btn{
+    margin: 0 0 auto auto;
+    padding: 1.3rem 2.8rem;
+    background-color: #fff;
+    border: 2px solid black;
+    width: 16rem;
+    text-align: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.accordion-text{
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #CFCFCF;
+    display: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.accordion.open header{
+    border: none;    
+    margin-bottom: 0;
+}
+.accordion.open .accordion-text{
+    display: block;
+}
+.accordion.open .btn{
+    background-color: black;
+    color: #fff;
+}
+footer{
+    background-color: #656565;
+    padding: 3.1rem 0;
+    color: #fff;
+}
+footer a{
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+footer .container{
+    max-width: 108.1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+footer div{
+    display: flex;
+    gap: 7.2rem;
+}
